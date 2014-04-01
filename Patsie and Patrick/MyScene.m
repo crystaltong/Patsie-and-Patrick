@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 YuryGitman. All rights reserved.
 
 
-
 #import "MyScene.h"
 
 
