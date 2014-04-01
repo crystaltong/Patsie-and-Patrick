@@ -45,19 +45,19 @@
     
     [self.physicsWorld addJoint:_myRopeJoint2];
     
-    _myRopeJoint3 = [SKPhysicsJointLimit jointWithBodyA:_myCircle4.physicsBody bodyB:_myCircle5.physicsBody anchorA:_myCircle4.position anchorB:_myCircle5.position];
+    _myRopeJoint3 = [SKPhysicsJointLimit jointWithBodyA:_myCircle1.physicsBody bodyB:_myCircle5.physicsBody anchorA:_myCircle1.position anchorB:_myCircle5.position];
     
     [self.physicsWorld addJoint:_myRopeJoint3];
     
-    _myRopeJoint4 = [SKPhysicsJointLimit jointWithBodyA:_myCircle5.physicsBody bodyB:_myCircle6.physicsBody anchorA:_myCircle5.position anchorB:_myCircle6.position];
+    _myRopeJoint4 = [SKPhysicsJointLimit jointWithBodyA:_myCircle1.physicsBody bodyB:_myCircle6.physicsBody anchorA:_myCircle1.position anchorB:_myCircle6.position];
     
     [self.physicsWorld addJoint:_myRopeJoint4];
     
-    _myRopeJoint5 = [SKPhysicsJointSpring jointWithBodyA:_myCircle6.physicsBody bodyB:_myCircle7.physicsBody anchorA:_myCircle6.position anchorB:_myCircle7.position];
+    _myRopeJoint5 = [SKPhysicsJointSpring jointWithBodyA:_myCircle1.physicsBody bodyB:_myCircle7.physicsBody anchorA:_myCircle1.position anchorB:_myCircle7.position];
     
     [self.physicsWorld addJoint:_myRopeJoint5];
     
-    _myRopeJoint6 = [SKPhysicsJointLimit jointWithBodyA:_myCircle7.physicsBody bodyB:_myCircle8.physicsBody anchorA:_myCircle7.position anchorB:_myCircle8.position];
+    _myRopeJoint6 = [SKPhysicsJointLimit jointWithBodyA:_myCircle1.physicsBody bodyB:_myCircle8.physicsBody anchorA:_myCircle1.position anchorB:_myCircle8.position];
     
     [self.physicsWorld addJoint:_myRopeJoint6];
     
@@ -74,18 +74,28 @@
     _myCircle8 =[[SKSpriteNode alloc]initWithColor:[SKColor yellowColor] size:CGSizeMake(10, 10)];
     
     
-    [_myCircle1 setPosition:CGPointMake(self.size.width/1.5, self.size.height/1.5)];
-    [_myCircle2 setPosition:CGPointMake(_myCircle1.size.width/1.0, _myCircle1.size.height/2)];
-    [_myCircle3 setPosition:CGPointMake(_myCircle1.size.width/1.0, _myCircle1.size.height/1)];
-    [_myCircle4 setPosition:CGPointMake(_myCircle1.size.width/2.0, _myCircle1.size.height/0.5)];
-    [_myCircle5 setPosition:CGPointMake(_myCircle1.size.width/2.5, _myCircle1.size.height/2.5)];
-    [_myCircle6 setPosition:CGPointMake(_myCircle1.size.width/0.5, _myCircle1.size.height/0.5)];
-    [_myCircle7 setPosition:CGPointMake(_myCircle1.size.width/0.5, _myCircle1.size.height/2.5)];
-    [_myCircle8 setPosition:CGPointMake(_myCircle1.size.width/3, _myCircle1.size.height/0.5)];
+//    [_myCircle1 setPosition:CGPointMake(self.size.width/1.5, self.size.height/1.5)];
+//    [_myCircle2 setPosition:CGPointMake(self.size.width/1.0, self.size.height/2)];
+//    [_myCircle3 setPosition:CGPointMake(self.size.width/1.0, self.size.height/1)];
+//    [_myCircle4 setPosition:CGPointMake(self.size.width/2.0, self.size.height/0.5)];
+//    [_myCircle5 setPosition:CGPointMake(self.size.width/2.5, self.size.height/2.5)];
+//    [_myCircle6 setPosition:CGPointMake(self.size.width/0.5, self.size.height/0.5)];
+//    [_myCircle7 setPosition:CGPointMake(self.size.width/0.5, self.size.height/2.5)];
+//    [_myCircle8 setPosition:CGPointMake(self.size.width/3, self.size.height/0.5)];
+
+    [_myCircle1 setPosition:CGPointMake(200, 200)];
+    [_myCircle2 setPosition:CGPointMake(220, 200)];
+    [_myCircle3 setPosition:CGPointMake(200, 220)];
+    [_myCircle4 setPosition:CGPointMake(220, 200)];
+    [_myCircle5 setPosition:CGPointMake(200, 220)];
+    [_myCircle6 setPosition:CGPointMake(200, 220)];
+    [_myCircle7 setPosition:CGPointMake(200, 220)];
+    [_myCircle8 setPosition:CGPointMake(200, 220)];
+
     
-    _myCircle1.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:30];
-    _myCircle2.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:20];
-    _myCircle3.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:20];
+    _myCircle1.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:15];
+    _myCircle2.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:5];
+    _myCircle3.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:5];
     _myCircle4.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:5];
     _myCircle5.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:5];
     _myCircle6.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:5];
@@ -110,6 +120,8 @@
     [_myCircle1 addChild:_myCircle7];
     [_myCircle1 addChild:_myCircle8];
     
+    [self activateJointRope];
+    
 
     
 }
@@ -130,14 +142,17 @@
         /* Setup your scene here */
         
         self.scaleMode = SKSceneScaleModeAspectFit;
+        self.physicsWorld.gravity = CGVectorMake(0.0, 0.0);
+        
       //  self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
         [self.physicsBody setRestitution:1];
         
         
         [self spawnCircles];
+              [self spawnCircles];
         
-        [self activateJointRope];
+        
         
     }
     return self;
