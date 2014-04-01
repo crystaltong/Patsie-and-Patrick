@@ -476,6 +476,7 @@
 				8BEE139518CF893C00A975BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BEE139618CF893C00A975BE /* Build configuration list for PBXNativeTarget "Patsie and PatrickTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +485,7 @@
 				8BEE139818CF893C00A975BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
