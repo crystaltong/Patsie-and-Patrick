@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6465A77618F397F100B219A6 /* background-desat.png in Resources */ = {isa = PBXBuildFile; fileRef = 6465A75E18F397F100B219A6 /* background-desat.png */; };
+		6465A77718F397F100B219A6 /* background-desat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6465A75F18F397F100B219A6 /* background-desat@2x.png */; };
+		6465A77818F397F100B219A6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76018F397F100B219A6 /* background.png */; };
+		6465A77918F397F100B219A6 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76118F397F100B219A6 /* background@2x.png */; };
+		6465A77A18F397F100B219A6 /* perlin.c in Sources */ = {isa = PBXBuildFile; fileRef = 6465A76318F397F100B219A6 /* perlin.c */; };
+		6465A77B18F397F100B219A6 /* level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76618F397F100B219A6 /* level1.plist */; };
+		6465A77C18F397F100B219A6 /* level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76718F397F100B219A6 /* level2.plist */; };
+		6465A77D18F397F100B219A6 /* level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76818F397F100B219A6 /* level3.plist */; };
+		6465A77E18F397F100B219A6 /* level4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76918F397F100B219A6 /* level4.plist */; };
+		6465A77F18F397F100B219A6 /* level5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76A18F397F100B219A6 /* level5.plist */; };
+		6465A78018F397F100B219A6 /* level6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76B18F397F100B219A6 /* level6.plist */; };
+		6465A78118F397F100B219A6 /* level7.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76C18F397F100B219A6 /* level7.plist */; };
+		6465A78218F397F100B219A6 /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76E18F397F100B219A6 /* bgMusic.mp3 */; };
+		6465A78318F397F100B219A6 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6465A76F18F397F100B219A6 /* lose.mp3 */; };
+		6465A78418F397F100B219A6 /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6465A77018F397F100B219A6 /* pop.mp3 */; };
+		6465A78518F397F100B219A6 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6465A77118F397F100B219A6 /* win.mp3 */; };
+		6465A78618F397F100B219A6 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6465A77218F397F100B219A6 /* sprites.atlas */; };
+		6465A78718F397F100B219A6 /* BookTrailer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6465A77418F397F100B219A6 /* BookTrailer.m4v */; };
+		6465A78818F397F100B219A6 /* loop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6465A77518F397F100B219A6 /* loop.mov */; };
 		8BEE135E18CF893B00A975BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEE135D18CF893B00A975BE /* Foundation.framework */; };
 		8BEE136018CF893B00A975BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEE135F18CF893B00A975BE /* CoreGraphics.framework */; };
 		8BEE136218CF893B00A975BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEE136118CF893B00A975BE /* UIKit.framework */; };
@@ -37,6 +56,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6465A75E18F397F100B219A6 /* background-desat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-desat.png"; sourceTree = "<group>"; };
+		6465A75F18F397F100B219A6 /* background-desat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-desat@2x.png"; sourceTree = "<group>"; };
+		6465A76018F397F100B219A6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		6465A76118F397F100B219A6 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		6465A76318F397F100B219A6 /* perlin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = perlin.c; sourceTree = "<group>"; };
+		6465A76418F397F100B219A6 /* perlin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perlin.h; sourceTree = "<group>"; };
+		6465A76618F397F100B219A6 /* level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level1.plist; sourceTree = "<group>"; };
+		6465A76718F397F100B219A6 /* level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level2.plist; sourceTree = "<group>"; };
+		6465A76818F397F100B219A6 /* level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level3.plist; sourceTree = "<group>"; };
+		6465A76918F397F100B219A6 /* level4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level4.plist; sourceTree = "<group>"; };
+		6465A76A18F397F100B219A6 /* level5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level5.plist; sourceTree = "<group>"; };
+		6465A76B18F397F100B219A6 /* level6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level6.plist; sourceTree = "<group>"; };
+		6465A76C18F397F100B219A6 /* level7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level7.plist; sourceTree = "<group>"; };
+		6465A76E18F397F100B219A6 /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
+		6465A76F18F397F100B219A6 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		6465A77018F397F100B219A6 /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		6465A77118F397F100B219A6 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		6465A77218F397F100B219A6 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		6465A77418F397F100B219A6 /* BookTrailer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = BookTrailer.m4v; sourceTree = "<group>"; };
+		6465A77518F397F100B219A6 /* loop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = loop.mov; sourceTree = "<group>"; };
 		8BEE135A18CF893B00A975BE /* Patsie and Patrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patsie and Patrick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEE135D18CF893B00A975BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BEE135F18CF893B00A975BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,9 +126,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6465A75C18F397F100B219A6 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				6465A75D18F397F100B219A6 /* Backgrounds */,
+				6465A76218F397F100B219A6 /* Code */,
+				6465A76518F397F100B219A6 /* Levels */,
+				6465A76D18F397F100B219A6 /* Sounds */,
+				6465A77218F397F100B219A6 /* sprites.atlas */,
+				6465A77318F397F100B219A6 /* Videos */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		6465A75D18F397F100B219A6 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				6465A75E18F397F100B219A6 /* background-desat.png */,
+				6465A75F18F397F100B219A6 /* background-desat@2x.png */,
+				6465A76018F397F100B219A6 /* background.png */,
+				6465A76118F397F100B219A6 /* background@2x.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		6465A76218F397F100B219A6 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				6465A76318F397F100B219A6 /* perlin.c */,
+				6465A76418F397F100B219A6 /* perlin.h */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		6465A76518F397F100B219A6 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				6465A76618F397F100B219A6 /* level1.plist */,
+				6465A76718F397F100B219A6 /* level2.plist */,
+				6465A76818F397F100B219A6 /* level3.plist */,
+				6465A76918F397F100B219A6 /* level4.plist */,
+				6465A76A18F397F100B219A6 /* level5.plist */,
+				6465A76B18F397F100B219A6 /* level6.plist */,
+				6465A76C18F397F100B219A6 /* level7.plist */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		6465A76D18F397F100B219A6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6465A76E18F397F100B219A6 /* bgMusic.mp3 */,
+				6465A76F18F397F100B219A6 /* lose.mp3 */,
+				6465A77018F397F100B219A6 /* pop.mp3 */,
+				6465A77118F397F100B219A6 /* win.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		6465A77318F397F100B219A6 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				6465A77418F397F100B219A6 /* BookTrailer.m4v */,
+				6465A77518F397F100B219A6 /* loop.mov */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		8BEE135118CF893A00A975BE = {
 			isa = PBXGroup;
 			children = (
+				6465A75C18F397F100B219A6 /* Art */,
 				8BEE136518CF893B00A975BE /* Patsie and Patrick */,
 				8BEE138918CF893B00A975BE /* Patsie and PatrickTests */,
 				8BEE135C18CF893B00A975BE /* Frameworks */,
@@ -241,9 +348,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BEE136A18CF893B00A975BE /* InfoPlist.strings in Resources */,
+				6465A77618F397F100B219A6 /* background-desat.png in Resources */,
+				6465A78718F397F100B219A6 /* BookTrailer.m4v in Resources */,
+				6465A77C18F397F100B219A6 /* level2.plist in Resources */,
+				6465A78218F397F100B219A6 /* bgMusic.mp3 in Resources */,
+				6465A77818F397F100B219A6 /* background.png in Resources */,
+				6465A77B18F397F100B219A6 /* level1.plist in Resources */,
+				6465A77718F397F100B219A6 /* background-desat@2x.png in Resources */,
+				6465A77E18F397F100B219A6 /* level4.plist in Resources */,
+				6465A77D18F397F100B219A6 /* level3.plist in Resources */,
+				6465A78018F397F100B219A6 /* level6.plist in Resources */,
+				6465A78618F397F100B219A6 /* sprites.atlas in Resources */,
 				8BEE137D18CF893B00A975BE /* Images.xcassets in Resources */,
 				8BEE137B18CF893B00A975BE /* Spaceship.png in Resources */,
+				6465A78418F397F100B219A6 /* pop.mp3 in Resources */,
+				6465A78518F397F100B219A6 /* win.mp3 in Resources */,
+				6465A77918F397F100B219A6 /* background@2x.png in Resources */,
+				6465A78118F397F100B219A6 /* level7.plist in Resources */,
+				6465A78818F397F100B219A6 /* loop.mov in Resources */,
+				6465A77F18F397F100B219A6 /* level5.plist in Resources */,
 				8BEE137318CF893B00A975BE /* Main.storyboard in Resources */,
+				6465A78318F397F100B219A6 /* lose.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6465A77A18F397F100B219A6 /* perlin.c in Sources */,
 				8BEE137918CF893B00A975BE /* MyScene.m in Sources */,
 				8BEE137618CF893B00A975BE /* ViewController.m in Sources */,
 				8BEE137018CF893B00A975BE /* AppDelegate.m in Sources */,
