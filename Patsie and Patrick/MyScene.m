@@ -24,6 +24,21 @@ typedef NS_OPTIONS(uint32_t, CNPhysicsCategory)
 
 @implementation MyScene
 
+{
+    SKNode *_gameNode;
+    SKSpriteNode *_background;
+    SKSpriteNode *_l1patsiepatrick;
+    SKSpriteNode *_l1patsiepatrickannoyed;
+    SKSpriteNode *_l1patsiepatricktickedoff;
+    SKSpriteNode *_l1patsiepatricktickangry;
+    SKSpriteNode *_badpresent1;
+    SKSpriteNode *_badpresent2;
+    SKSpriteNode *_badpresent3;
+    
+    int _currentLevel;
+}
+
+
 
 
 -(void) presents{
@@ -43,68 +58,21 @@ typedef NS_OPTIONS(uint32_t, CNPhysicsCategory)
 
 
 -(id)initWithSize:(CGSize)size {
-    if (self = [super initWithSize:size]) {
-        /* Setup your scene here */
-        
-        self.scaleMode = SKSceneScaleModeAspectFit;
-        self.physicsWorld.gravity = CGVectorMake(0.0, 0.0);
-        
-      //  self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
-        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
-        [self.physicsBody setRestitution:0.0];
-        
-        
-        [self presents];
-        
-        
-        
-    }
-    return self;
+    
+    // NEED TO PUT IMAGES IN THE FILE W/ CORRECT NAMES
+    _background = [SKSpriteNode spriteNodeWithImageNamed:@"L1Background1"];
+    _background.position = CGPointMake(self.size.width * 0.50,
+                                       self.size.height * 0.50);
+    _l1patsiepatrick = [SKSpriteNode spriteNodeWithImageNamed:@"L1PatsiePatrick"];
+    _l1patsiepatrick.position = CGPointMake(self.size.width * 0.32,
+                                            self.size.height * 0.38);
+    
+    [self addChild:_background];
+    [self addChild:_l1patsiepatrick];
+    
+    _myCircle9 =[[SKSpriteNode alloc]initWithColor:[SKColor yellowColor] size:CGSizeMake(20, 20)];
 }
--(void)addBlocksFromArray:(NSArray*)blocks
-{
-    //1 pg.241 this creates a block sprite for you
-    for (NSDictionary *block in blocks) {
-        
-        //2
-        SKSpriteNode *blockSprite =
-        [self addBlockWithRect:CGRectFromString(block[@"rect"])];
-        
-        //have categories of blocks and cat to collide pg 245
-        
-        blockSprite.physicsBody.categoryBitMask =
-        CNPhysicsCategoryBlock | CNPhysicsCategoryCat;
-        
-        blockSprite.physicsBody.collisionBitMask =
-        CNPhysicsCategoryBlock;
-        
-        
-    }// forNSDictionary
-}//addblocksarray
 
--(SKSpriteNode*)addBlockWithRect:(CGRect)blockRect
-
-//whats the difference between CGRect and block rect?
-
-{
-    //3
-    NSString *textureName = [NSString stringWithFormat:@"%.fx%.f.png",blockRect.size.width, blockRect.size.height];
-    //4
-    SKSpriteNode *blockSprite =
-    [SKSpriteNode spriteNodeWithImageNamed:textureName];
-    blockSprite.position = blockRect.origin;
-    
-    //5 make blockrect smaller by 2x2 = body rect,
-    
-    CGRect bodyRect = CGRectInset(blockRect, 2, 2);
-    blockSprite.physicsBody =
-    [SKPhysicsBody bodyWithRectangleOfSize:bodyRect.size];
-    
-    //6
-    //[blockSprite attachDebugRectWithSize:blockSprite.size];
-    
-    return blockSprite;
-}//blockwithrect pg.242
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
     {
