@@ -71,7 +71,7 @@ typedef NS_OPTIONS(uint32_t, CNPhysicsCategory)
     [self addChild:_l1patsiepatrick];
     
     _myCircle9 =[[SKSpriteNode alloc]initWithColor:[SKColor yellowColor] size:CGSizeMake(20, 20)];
-}
+}//insert image files?
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
