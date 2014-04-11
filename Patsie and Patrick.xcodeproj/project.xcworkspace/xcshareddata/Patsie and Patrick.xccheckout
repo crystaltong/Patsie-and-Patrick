@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>944CAC8E-BEE7-4F63-BF8D-D500D01A9D24</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Patsie and Patrick</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2A37FA79-F674-4B66-91E7-495500D10142</key>
+		<string>https://github.com/crystaltong/Patsie-and-Patrick.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Patsie and Patrick.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2A37FA79-F674-4B66-91E7-495500D10142</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/crystaltong/Patsie-and-Patrick.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2A37FA79-F674-4B66-91E7-495500D10142</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A37FA79-F674-4B66-91E7-495500D10142</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Patsie-and-Patrick</string>
+		</dict>
+	</array>
+</dict>
+</plist>
