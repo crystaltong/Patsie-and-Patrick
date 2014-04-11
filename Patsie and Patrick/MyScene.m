@@ -55,51 +55,72 @@ typedef NS_OPTIONS(uint32_t, CNPhysicsCategory)
     
 }
 
+-(instancetype)initWithSize:(CGSize)size
+{
+    if(self = [super initWithSize:size])
+    {
+        // NEED TO PUT IMAGES IN THE FILE W/ CORRECT NAMES
+        _background = [SKSpriteNode spriteNodeWithImageNamed:@"L1Background1"];
+        _background.position = CGPointMake(self.size.width * 0.50,
+                                           self.size.height * 0.50);
+        _l1patsiepatrick = [SKSpriteNode spriteNodeWithImageNamed:@"L1PatsiePatrick"];
+        _l1patsiepatrick.position = CGPointMake(self.size.width * 0.32,
+                                                self.size.height * 0.38);
+        
+  
+    
+//        _myCircle9 =[[SKSpriteNode alloc]initWithColor:[SKColor yellowColor] size:CGSizeMake(20, 20)];
+//        
+//        [_myCircle9 setPosition:CGPointMake(270, 350)];
+//        
+//        _myCircle9.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:_myCircle9.size];
+//        
+//        [_myCircle9.physicsBody setDynamic:YES];
+//        [self addChild:_myCircle9];
+//    self.physicsWorld.gravity = CGVectorMake(-0.5, -0.4);
+//        
+        
+        [self addChild:_background];
+        [self addChild:_l1patsiepatrick];
+    }
 
 
--(id)initWithSize:(CGSize)size {
-    
-    // NEED TO PUT IMAGES IN THE FILE W/ CORRECT NAMES
-    _background = [SKSpriteNode spriteNodeWithImageNamed:@"L1Background1"];
-    _background.position = CGPointMake(self.size.width * 0.50,
-                                       self.size.height * 0.50);
-    _l1patsiepatrick = [SKSpriteNode spriteNodeWithImageNamed:@"L1PatsiePatrick"];
-    _l1patsiepatrick.position = CGPointMake(self.size.width * 0.32,
-                                            self.size.height * 0.38);
-    
-    [self addChild:_background];
-    [self addChild:_l1patsiepatrick];
-    
-    _myCircle9 =[[SKSpriteNode alloc]initWithColor:[SKColor yellowColor] size:CGSizeMake(20, 20)];
-}//insert image files?
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+    
+    
     {
-        [super touchesBegan:touches withEvent:event];
+        for (UITouch *touch in touches) {
+            CGPoint location = [touch locationInNode:self];
+            
+            if (_myCircle9.position.x < location.x + 50 && _myCircle9.position.x > location.x - 50 &&
+                
+                _myCircle9.position.y < location.y + 50 && _myCircle9.position.y > location.y - 50) {
+                
+                _myCircle9.position = CGPointMake(400, 400);
+            }//CG
+        }//for
         
-        // 1
-        UITouch *touch = [touches anyObject];
-        CGPoint location = [touch locationInNode:self];
+        for (UITouch *touch in touches) {
+            CGPoint location = [touch locationInNode:self];
+            
+            if (_myCircle9.position.x < location.x + 50 && _myCircle9.position.x > location.x - 50 &&
+                
+                _myCircle9.position.y < location.y + 50 && _myCircle9.position.y > location.y - 50) {
+                
+                _myCircle9.position = CGPointMake(200, 400);
+                
+            }//for2
+        }//CG2
         
-        [_myCircle9 removeFromParent];
         
-        // 2
-        [self.physicsWorld enumerateBodiesAtPoint:location
-                                       usingBlock:
-         ^(SKPhysicsBody *body, BOOL *stop) {
-             // 3
-             if (body.categoryBitMask == CNPhysicsCategoryBlock) {
-                 [body.node removeFromParent];
-                 *stop = YES; // 4
-                 
-                 // 5
-                 [self runAction:[SKAction playSoundFileNamed:@"pop.mp3"
-                                            waitForCompletion:NO]];
-             }
-         }];
         
-    }
+        
+        
+    }//TB
+
+
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     }
